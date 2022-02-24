@@ -14,4 +14,22 @@
  
 # Lesson 3. Асинхронные запросы
 1. Переделайте getRequest() так, чтобы она использовала промисы.
-2. Добавьте в соответствующие классы методы добавления товара в корзину, удаления товара из корзины и получения списка товаров корзины.
+2. 
+Комментарий: let getRequest = (url) => {
+     return new Promise((resolve, reject) => {
+         let xhr = new XMLHttpRequest();
+         xhr.open("GET", url, true);
+         xhr.onreadystatechange = () => {
+             if(xhr.readyState === 4){
+                 if(xhr.status !== 200){
+                     reject('Error');
+                 } else {
+                     resolve(xhr.responseText);
+                 }
+            }
+        };
+        xhr.send();
+    })
+};
+
+3. Добавьте в соответствующие классы методы добавления товара в корзину, удаления товара из корзины и получения списка товаров корзины.
