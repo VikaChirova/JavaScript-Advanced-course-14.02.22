@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="style/style.css">
+   <title>Форма обратной связи</title>
+</head>
+
+<body>
+   <div class="form-box">
+      <h1 style="text-align: center"> Форма обратной связи </h1>
+      <form name="regform" onsubmit="return formValidation(event)">
+         <div class="form-group">
+            <h2 id="form-box-area-line"></h2>
+            <p>Имя:
+               <input type="text" size=65 name="name" class="form-box-area">
+            </p><br>
+            <span class="error-text form-box-area"></span>
+            <p>E-mail:
+               <input type="text" size=65 name="email" class="form-box-area">
+            </p><br>
+            <span class="error-text form-box-area"></span>
+            <p>Телефон:
+               <input type="text" size=65 name="telephone" onclick="this.value=''" value="+7(000)000-0000"
+                  class="form-box-area">
+            </p><br>
+            <span class="error-text form-box-area"></span>
+            <p> Комментарий:
+               <textarea cols="55" name="comment" class="form-box-area"> </textarea>
+            </p>
+            <p>
+               <input class="sub-btn" type="submit" value="Отправить" name="submitButton">
+               <!-- <input type="reset" value="Отмена" name="Reset">  -->
+            </p>
+         </div>
+      </form>
+
+   </div>
+   <h1 style="text-align: center"> Замена одинарных кавычек на двойные </h1>
+   <div class="box-next">
+      <span id="text-box-before">
+         One: 'Hi Mary.'
+         Two: 'Oh, hi.'
+         One: 'How are you doing?'
+         Two: 'I'm doing alright. How about you?'
+         One: 'Not too bad. The weather is great <b>isn't</b> it?'
+         Two: 'Yes. <b>It's</b> absolutely beautiful today.'
+         One: 'I wish it was like this more frequently.'
+         Two: 'Me too.'
+         One: 'So where are you going now?'
+         Two: '<b>I'm</b> going to meet a friend of mine at the department store'
+         One: 'Going to do a little shopping?'
+         Two: 'Yeah, I have to buy some presents for my parents.'
+         One: '<b>What's</b> the occasion?'
+         Two: '<b>It's</b> their anniversary.'
+         One: '<b>That's</b> great. Well, you better get going. You <b>don't</b> want to be late.'
+         Two: '<b>I'll</b> see you next time.'
+         One: 'Sure.Bye.'
+      </span>
+      <br>
+      <button id="btn-change-text" onclick="changeText()"> Изменить на двойные ковычки </button>
+      <br>
+      <span id="text-box-after"></span>
+   </div>
+
+   <script src="js/main.js"></script>
+   <script src="js/main-2.js"></script>
+</body>
+
+</html>
