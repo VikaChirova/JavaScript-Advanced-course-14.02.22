@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <title>Интернет-магазин</title>
+   <link href="style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+   <header class="header">
+      <div class="header-top">
+         <div>
+            <input type="text" class="header-top-input" />
+         </div>
+      </div>
+      <div class="header-bottom">
+         <div>
+            <ul class="header-bottom-list">
+               <a href="#" class="header-bottom-link">
+                  <li class="header-bottom-text">Меню</li>
+               </a>
+               <a href="#" class="header-bottom-link">
+                  <li class="header-bottom-text">Каталог</li>
+               </a>
+               <a href="#" class="header-bottom-link">
+                  <li class="header-bottom-text">Адрес</li>
+               </a>
+               <a href="#" class="header-bottom-link">
+                  <li class="header-bottom-text">О нас</li>
+               </a>
+            </ul>
+         </div>
+      </div>
+
+      <button class="btn-cart" type="button" id="basket-btn">Корзина</button>
+   </header>
+   <main class="wrap" class="main">
+      <div class="products"></div>
+      <div id="good-list-block" class="goods-list">
+         <div id="goods-list-modal">
+            <div id="goods-list-product"></div>
+            <p id="goods-list-total"></p>
+         </div>
+   </main>
+
+   <script src="js/cart.js"></script>
+   <script src="js/main.js"></script>
+</body>
+
+</html>
