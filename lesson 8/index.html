@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <title>Интернет-магазин</title>
+   <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+   <div id="app">
+      <div class="header-bottom ">
+         <div>
+            <ul class="header-bottom-list">
+               <a href="#" class="header-bottom-link">
+                  <li class="header-bottom-text">Меню</li>
+               </a>
+               <a href="#" class="header-bottom-link">
+                  <li class="header-bottom-text">Каталог</li>
+               </a>
+               <a href="#" class="header-bottom-link">
+                  <li class="header-bottom-text">Адрес</li>
+               </a>
+               <a href="#" class="header-bottom-link">
+                  <li class="header-bottom-text">О нас</li>
+               </a>
+            </ul>
+         </div>
+
+      </div>
+      <header>
+         <div class="cart">
+            <searchform></searchform>
+            <cart ref="cart"></cart>
+         </div>
+      </header>
+      <main>
+         <products ref="products"></products>
+         <error ref="error"></error>
+      </main>
+   </div>
+   <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+      integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+      crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+   <script src="js/Cartcomp.js"></script>
+   <script src="js/Prodcomp.js"></script>
+   <script src="js/search_comp.js"></script>
+
+   <!-- <script src="js/ErrorComp.js"></script>-->
+   <script src="js/main.js"></script>
+</body>
+
+</html>
